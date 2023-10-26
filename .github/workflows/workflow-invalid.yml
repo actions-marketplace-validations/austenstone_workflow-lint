@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latests
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v4
       - run: npm install
       - Name: Lint
         run: npm run lint
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - test: actions/setup-node@v6
+      - test: actions/setup-node@v4
       - run: npm install
       - run: npm run build
       - uses: JamesIves/github-pages-deploy-action@3.5.14
